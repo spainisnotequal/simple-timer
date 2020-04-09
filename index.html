@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- information about the page that the user doesn't see -->
+    <title>Timer</title>
+    <!-- metadata elements (such as links, meta, title, style) go here -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="functions.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- content of the page; what the user sees -->
+
+    <header>
+      <h3>Timer</h3>
+      <!-- header goes here -->
+    </header>
+
+    <main>
+      <div id="control-buttons" class="btn-group">
+        <input
+          type="button"
+          onclick="start()"
+          value="Start"
+          id="start"
+          class="btn btn-primary"
+        />
+        <input
+          type="button"
+          disabled
+          onclick="timestamp()"
+          value="Timestamp"
+          id="timestamp"
+          class="btn btn-primary"
+        />
+        <input
+          type="button"
+          disabled
+          onclick="stop()"
+          value="Stop"
+          id="stop"
+          class="btn btn-primary"
+        />
+      </div>
+      <ul id="timestamp-list" class="list-group" style="margin-top: 2rem;"></ul>
+      <!-- main content goes here -->
+    </main>
+
+    <footer>
+      <!-- footer goes here -->
+    </footer>
+
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  </body>
+</html>
